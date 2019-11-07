@@ -5,6 +5,9 @@
   --acc-color: #320D6D;
   --dark-color: #1D004C;
   --light-color: #D2B7FF;
+
+  --main-alpha: rgba(68, 5, 170, 0.7);
+  --sec-alpha: rgba(141, 71, 255, 0.7);
 }
 
 body {
