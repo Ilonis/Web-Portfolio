@@ -12,6 +12,7 @@ import { AboutComponent } from './about/about.component';
 import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
+import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfolio-details.component';
 
 @NgModule({
   imports:      [ 
@@ -21,6 +22,7 @@ import { ContactComponent } from './contact/contact.component';
       { path: '', component: HomeComponent },
       { path: 'about', component: AboutComponent },
       { path: 'portfolio', component: PortfolioComponent },
+      { path: 'portfolio/:path', component: PortfolioDetailsComponent },
       { path: 'contact', component: ContactComponent },
     ]),
     FlexLayoutModule 
@@ -33,7 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     AboutComponent, 
     HomeComponent, 
     PortfolioComponent, 
-    ContactComponent 
+    ContactComponent, 
+    PortfolioDetailsComponent 
   ],
   bootstrap:    [ 
     HeaderComponent, 

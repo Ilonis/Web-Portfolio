@@ -5,6 +5,9 @@
   <div (mouseleave)="overlayActive=false" *ngIf="overlayActive" class="overShow overCom">
     <h1>{{ projects[index].name }}</h1>
     <p>{{ projects[index].shortDescrip }}</p>
-    <a [href]="projects[index].url">View</a>
+    <p>
+      <a [title]="projects[index].name + ' details'" [routerLink]="['/portfolio', projects[index].path]">{{ projects[index].name }} details</a>
+    </p>
+    <a [href]="projects[index].url" [title]="projects[index].name + ' link'" target="_blank">View</a>
   </div>
 </div>
