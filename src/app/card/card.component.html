@@ -1,5 +1,5 @@
 <div (mouseenter)="overlayActive=true" class="overWrap">
-  <div (mouseleave)="overlayActive=false" *ngIf="!overlayActive" class="overHide overCom"[style.background-image]="'url(' + projects[index].image + ')'">
+  <div (mouseleave)="overlayActive=false" *ngIf="!overlayActive" class="overHide overCom" [style.background-image]="'url(' + projects[index].image + ')'">
     <h1>{{ projects[index].name }}</h1>
   </div>
   <div (mouseleave)="overlayActive=false" *ngIf="overlayActive" class="overShow overCom">
