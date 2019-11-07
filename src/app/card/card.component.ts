@@ -7,7 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardComponent implements OnInit {
 
-  constructor() { }
+  overlayActive: boolean;
+
+  constructor() {
+      this.overlayActive = false;
+  }
 
   ngOnInit() {
   }

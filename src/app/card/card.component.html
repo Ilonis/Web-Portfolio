@@ -1,17 +1,4 @@
-<div 
-  gdAreas="header header | side content | footer footer"
-  gdGap="16px"
-  gdRows="auto auto auto">
-  <div gdArea="header">
-    Header
-   </div>
-  <div gdArea="side">
-    Side
-   </div>
-  <div gdArea="content">
-    Content
-  </div>
-  <div gdArea="footer">
-    Footer
-  </div>
+<div (mouseover)="overlayActive=true" (mouseout)="overlayActive=false" class="overWrap">
+  <div *ngIf="!overlayActive" class="overHide">Hide</div>
+  <div *ngIf="overlayActive" class="overShow">Show</div>
 </div>
