@@ -1,1 +1,17 @@
 /* Add application styles & imports to this file! */
+:root {
+  --main-color: #4405AA;
+  --sec-color: #8D47FF;
+  --acc-color: #320D6D;
+  --dark-color: #1D004C;
+  --light-color: #D2B7FF;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  color: var(--dark-color);
+}
+h1 {
+  color: var(--main-color);
+}
