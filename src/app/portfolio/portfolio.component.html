@@ -1,6 +1,9 @@
 <h1>Portfolio</h1>
 <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="0px" fxLayoutAlign="flex-start">
-  <app-card fxFlex="34" fxFlex.xs="100%" fxShow.xs="false">
+  <ng-container *ngFor="let project of projects">
+    <app-card [index]="project.index" fxFlex="50" fxFlex.xs="100%"></app-card>
+  </ng-container>
+<!--  <app-card fxFlex="34" fxFlex.xs="100%" fxShow.xs="false">
   </app-card>
   <app-card fxFlex="66" fxFlex.xs="100%" [style.background-image]="'url(' + projects[0].image + ')'">
   </app-card>
@@ -11,8 +14,5 @@
   <app-card fxFlex="66" fxFlex.xs="100%" [style.background-image]="'url(' + projects[3].image + ')'">
   </app-card>
   <app-card fxFlex="34" fxFlex.xs="100%" fxShow.xs="false">
-  </app-card>
-</div>
-<div style="width: 100px; height: 100px;">
-{{ projects[0].image }}
+  </app-card>-->
 </div>

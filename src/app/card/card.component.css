@@ -1,17 +1,25 @@
 :host {
-  min-height: 350px;
-  background-size: cover;
-  background-position: 50%;
-  background-repeat: no-repeat;
-  background-color: var(--light-color);
   border: 1px solid #000000;
 }
-.overWrap {
-  padding: 25px;
-  height: 100%;
+div {
+  min-height: 350px;
 }
 .overHide {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-color: var(--light-color);
+}
+.overHide h1 {
+  color: var(--light-color);
+  text-shadow: 
+    -2px -2px var(--dark-color),
+    -2px 2px var(--dark-color),
+    2px -2px var(--dark-color),
+    2px 2px var(--dark-color);
 }

@@ -1,4 +1,8 @@
 <div (mouseover)="overlayActive=true" (mouseout)="overlayActive=false" class="overWrap">
-  <div *ngIf="!overlayActive" class="overHide">Hide</div>
-  <div *ngIf="overlayActive" class="overShow">Show</div>
+  <div *ngIf="!overlayActive" class="overHide"[style.background-image]="'url(' + projects[index].image + ')'">
+    <h1>{{ projects[index].name }}</h1>
+  </div>
+  <div *ngIf="overlayActive" class="overShow">
+    Show
+  </div>
 </div>
