@@ -17,27 +17,27 @@ Web project created for learning Angular, Github, and Stackblitz for use as a pe
     <ul>
       <li>color scheme</li>
       <li>fonts</li>
-    </ul</li>
+    </ul></li>
   <li>Impliment Menu from https://www.samsaraubud.com/
     <ul>
       <li>dynamic nav</li>
       <li>click events</li>
       <li>full screen overlay</li>
       <li>animations</li>
-    </ul</li>
+    </ul></li>
   <li>Add previous works to portfolio, including this one
     <ul>
       <li>Evolve</li>
       <li>Luna</li>
       <li>Hazel</li>
       <li>This site</li>
-    </ul</li>
+    </ul></li>
   <li>Add about</li>
   <li>Add working Contact form
     <ul>
       <li>form</li>
       <li>link to email</li>
-    </ul</li>
+    </ul></li>
   <li>Deploy</li>
 </ul>
 
