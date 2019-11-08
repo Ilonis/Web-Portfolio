@@ -3,3 +3,11 @@
 development from installation to upgrading. Familiar with taking existing content and fitting it into a modern design.
 Developed a keen sense for troubleshooting and problem solving to ensure client satisfaction and near 100% up-time.
 Passionate about bringing a client's vision and business practices to a modern and long lasting online presence.</p>
+<div fxLayout="row wrap">
+  <ng-container *ngFor="let skill of skills; last as isLast">
+    <div class="skillCircle" fxLayout="column" fxFlex="25%" fxFlex.lt-sm="50%" fxLayoutAlign="center center">
+      <h1>{{ skill.name }}</h1>
+      <circle-progress [percent]="skill.percent"></circle-progress>
+    </div>
+  </ng-container>
+</div>

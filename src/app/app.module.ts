@@ -28,13 +28,21 @@ import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfol
     ]),
     FlexLayoutModule,
     NgCircleProgressModule.forRoot({
-      // set defaults here
-      radius: 100,
-      outerStrokeWidth: 16,
-      innerStrokeWidth: 8,
-      outerStrokeColor: "#78C000",
-      innerStrokeColor: "#C7E596",
-      animationDuration: 300
+      radius: 50,
+      clockwise: false,
+      backgroundColor: "var(--sec-color)",
+      titleColor: "var(--light-color)",
+      unitsColor: "var(--light-color)",
+      titleFontSize: "20",
+      unitsFontSize: "15",
+      outerStrokeWidth: "40",
+      outerStrokeColor: "var(--main-color)",
+      outerStrokeLinecap: "butt",
+      innerStrokeColor: "var(--dark-color)",
+      innerStrokeWidth: "0",
+      titleFontWeight: "900",
+      animationDuration: "1000",
+      showSubtitle: false
     })
   ],
   declarations: [  
