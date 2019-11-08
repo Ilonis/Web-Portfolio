@@ -30,7 +30,7 @@ export const projects = [
     index: 3,
     name: 'Portfolio',
     path: 'portfolio',
-    url: 'https://www.evolvetemplate.com/',
+    url: 'https://github.com/Ilonis/Web-Portfolio',
     image: 'https://github.com/Ilonis/Web-Portfolio/blob/Initial-Build/src/app/imgs/evolve_main.jpg?raw=true',
     shortDescrip: 'Angular built, learning tool, project showcase.',
     description: 'Created from Designer\'s mockup. Functionally built from scratch.  Features Color Swapper (Top Left). This feature allows prospective clients or salespeople to showcase the different colors for the theme on the fly.'
