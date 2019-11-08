@@ -14,8 +14,13 @@ body {
   margin: 0px;
   padding: 0px;
   color: var(--dark-color);
+  font-family: 'Cabin', sans-serif;
 }
 h1 {
   color: var(--main-color);
   text-align: center;
+  font-family: 'Quicksand', sans-serif;
+}
+a {
+  text-decoration: none;
 }
