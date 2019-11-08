@@ -17,12 +17,12 @@ div {
   align-items: center;
 }
 .overHide h1 {
-  color: var(--light-color);
+  color: var(--dark-color);
   text-shadow: 
-    -2px -2px var(--dark-color),
-    -2px 2px var(--dark-color),
-    2px -2px var(--dark-color),
-    2px 2px var(--dark-color);
+    -2px -2px var(--light-color),
+    -2px 2px var(--light-color),
+    2px -2px var(--light-color),
+    2px 2px var(--light-color);
 }
 .overShow {
   flex-flow: column;
