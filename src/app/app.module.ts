@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
