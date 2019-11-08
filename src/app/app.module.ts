@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 import { HeaderComponent } from './header/header.component';
 import { BodyComponent } from './body/body.component';
@@ -33,8 +34,7 @@ import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfol
       innerStrokeWidth: 8,
       outerStrokeColor: "#78C000",
       innerStrokeColor: "#C7E596",
-      animationDuration: 300,
-      ...
+      animationDuration: 300
     })
   ],
   declarations: [  
