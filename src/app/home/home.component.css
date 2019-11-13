@@ -1,0 +1,16 @@
+:host {
+  display: block;
+}
+#hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1568952433726-3896e3881c65');
+  background-position: right bottom;
+  background-size: 200%;
+}
+#hero img:hover {
+  transform: scale(1.5);
+}

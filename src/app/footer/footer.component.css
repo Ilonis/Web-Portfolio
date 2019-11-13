@@ -1,5 +1,5 @@
 :host {
-  display: block;
+  display: none;
   width: 100%;
   height: 50px;
   background-color: var(--acc-color);

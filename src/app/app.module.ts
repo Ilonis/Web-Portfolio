@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
 import { RouterModule, Routes } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
@@ -14,10 +15,12 @@ import { HomeComponent } from './home/home.component';
 import { PortfolioComponent } from './portfolio/portfolio.component';
 import { ContactComponent } from './contact/contact.component';
 import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfolio-details.component';
+import { ResumeComponent } from './resume/resume.component';
 
 @NgModule({
   imports:      [ 
     BrowserModule, 
+    BrowserAnimationsModule,
     FormsModule, 
     RouterModule.forRoot([
       { path: '', component: HomeComponent },
@@ -25,6 +28,7 @@ import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfol
       { path: 'portfolio', component: PortfolioComponent },
       { path: 'portfolio/:path', component: PortfolioDetailsComponent },
       { path: 'contact', component: ContactComponent },
+      { path: 'resume', component: ResumeComponent },
     ]),
     FlexLayoutModule,
     NgCircleProgressModule.forRoot({
@@ -54,7 +58,7 @@ import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfol
     HomeComponent, 
     PortfolioComponent, 
     ContactComponent, 
-    PortfolioDetailsComponent 
+    PortfolioDetailsComponent, ResumeComponent 
   ],
   bootstrap:    [ 
     HeaderComponent, 
