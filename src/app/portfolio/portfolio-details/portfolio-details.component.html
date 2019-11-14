@@ -1,6 +1,16 @@
 <h1>Portfolio > {{ projects[index].name }} Details</h1>
 <div>
-  <img [src]="projects[index].image">
+  <div id="detailsImageCont">
+    <img [src]="projectDetails[index].image">
+    <a *ngFor="let descript of projectDetails[index].descripts, let i = index" routerLink="./" fragment="detail{{i+1}}">
+      <h2 class="detailsImageNumber detailsNumber" [ngStyle]="{'top.%': descript.coordy, 'left.%': descript.coordx}">{{ i + 1 }}</h2>
+    </a>
+  </div>
   <p>{{ projects[index].description }}</p>
   <a [href]="projects[index].url" target="_blank">View design</a>
+  <h1>Details</h1>
+  <div *ngFor="let descript of projectDetails[index].descripts, let i = index">
+    <h2 class="detailsNumber">{{ i + 1 }}</h2>
+    <p id="detail{{i+1}}">{{ descript.words }}</p>
+  </div>
 </div>

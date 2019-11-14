@@ -2,7 +2,7 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FormsModule } from '@angular/forms';
-import { RouterModule, Routes } from '@angular/router';
+import { RouterModule, Routes, ExtraOptions } from '@angular/router';
 import { FlexLayoutModule } from '@angular/flex-layout';
 import { NgCircleProgressModule } from 'ng-circle-progress';
 
@@ -17,6 +17,12 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfolio-details.component';
 import { ResumeComponent } from './resume/resume.component';
 
+const routerOptions: ExtraOptions = {
+  useHash: false,
+  anchorScrolling: 'enabled',
+  // ...any other options you'd like to use
+};
+
 @NgModule({
   imports:      [ 
     BrowserModule, 
@@ -29,7 +35,9 @@ import { ResumeComponent } from './resume/resume.component';
       { path: 'portfolio/:path', component: PortfolioDetailsComponent },
       { path: 'contact', component: ContactComponent },
       { path: 'resume', component: ResumeComponent },
-    ]),
+    ],
+    routerOptions,
+    ),
     FlexLayoutModule,
     NgCircleProgressModule.forRoot({
       radius: 50,

@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 
 import { projects } from '../../projects';
+import { projectDetails } from '../../project-details';
 
 @Component({
   selector: 'app-portfolio-details',
@@ -11,6 +12,7 @@ import { projects } from '../../projects';
 export class PortfolioDetailsComponent implements OnInit {
 
   projects = projects;
+  projectDetails = projectDetails;
   path;
   index;
 
