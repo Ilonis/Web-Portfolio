@@ -1,5 +1,5 @@
 <h1>Portfolio > {{ projects[index].name }} Details</h1>
-<div>
+<div fxLayout="column">
   <div id="detailsImageCont">
     <img [src]="projectDetails[index].image">
     <a *ngFor="let descript of projectDetails[index].descripts, let i = index" routerLink="./" fragment="detail{{i+1}}">
