@@ -1,7 +1,7 @@
 export const projectDetails = [
   {
     index: 0,
-    image: 'https://github.com/Ilonis/Web-Portfolio/blob/Initial-Build/src/app/imgs/evolve_main.jpg?raw=true',
+    image: 'https://github.com/Ilonis/Web-Portfolio/blob/First-Revision/src/app/imgs/evolve_full.jpg?raw=true',
     width: 1000,
     height: 2267,
     descripts: [
