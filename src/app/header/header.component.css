@@ -12,6 +12,7 @@
   color: var(--light-color);
   font-size: 3em;
   font-weight: bold;
+  z-index: 50;
 }
 #nav {
   position: fixed;

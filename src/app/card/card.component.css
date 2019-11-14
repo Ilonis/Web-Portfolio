@@ -2,7 +2,9 @@ div {
   min-height: 350px;
 }
 .overCom {  
+  position: relative;
   display: flex;
+  flex-flow: column;
   justify-content: center;
   align-items: center;
   width: 100%;
@@ -10,22 +12,24 @@ div {
   background-size: cover;
   background-position: 50%;
   background-repeat: no-repeat;
-  background-color: var(--light-color);
-}
-.overHide {
-  justify-content: center;
-  align-items: center;
-}
-.overHide h1 {
-  color: var(--main-color);
-  text-shadow: 
-    -1px -1px var(--light-color),
-    -1px 1px var(--light-color),
-    1px -1px var(--light-color),
-    1px 1px var(--light-color);
+  background-color: var(--sec-alpha);
+  overflow: hidden;
 }
 .overShow {
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+}
+.linkDetails, .linkExt {
+  padding: 10px 25px;
+  color: var(--dark-color);
+  font-size: 1.3em;
+  background-color: var(--light-color);
+  border-radius: 50px;
+}
+.linkDetails:hover, .linkExt:hover {
+  color: var(--light-color);
+  background-color: var(--dark-color);
+}
+.linkDetails {
+  color: var(--light-color);
+  background-color: var(--main-color)
 }

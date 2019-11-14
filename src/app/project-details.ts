@@ -6,24 +6,39 @@ export const projectDetails = [
     height: 2267,
     descripts: [
       {
-        coordx: 0,
-        coordy: 0,
+        coordx: 50,
+        coordy: 50,
         words:'Test', 
       },
       {
-        coordx: 100,
-        coordy: 0,
+        coordx: 200,
+        coordy: 400,
         words:'Test2', 
       },
       {
-        coordx: 0,
-        coordy: 100,
+        coordx: 700,
+        coordy: 250,
         words:'Test3', 
       },
       {
-        coordx: 100,
-        coordy: 100,
-        words:'Test3', 
+        coordx: 800,
+        coordy: 800,
+        words:'Test4', 
+      },
+      {
+        coordx: 250,
+        coordy: 1100,
+        words:'Test5', 
+      },
+      {
+        coordx: 500,
+        coordy: 1500,
+        words:'Test6', 
+      },
+      {
+        coordx: 400,
+        coordy: 2000,
+        words:'Test7', 
       },
     ],
   },

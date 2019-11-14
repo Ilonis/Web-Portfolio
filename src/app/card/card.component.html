@@ -1,13 +1,12 @@
-<div (mouseenter)="overlayActive=true" class="overWrap">
-  <div (mouseleave)="overlayActive=false" *ngIf="!overlayActive" class="overHide overCom" [style.background-image]="'url(' + projects[index].image + ')'">
-    <h1>{{ projects[index].name }}</h1>
-  </div>
-  <div (mouseleave)="overlayActive=false" *ngIf="overlayActive" class="overShow overCom">
-    <h1>{{ projects[index].name }}</h1>
-    <p>{{ projects[index].shortDescrip }}</p>
-    <p>
-      <a [title]="projects[index].name + ' details'" [routerLink]="['/portfolio', projects[index].path]">{{ projects[index].name }} details</a>
+<div class="overWrap">
+  <div (mouseenter)="toggle()" (mouseleave)="toggle()" class="overHide overCom" [style.background-image]="'url(' + projects[index].image + ')'">
+    <p [@openClose]="isOpen ? 'open' : 'closed'">
+      <a [routerLink]="['/portfolio', projects[index].path]" class="linkDetails" [title]="projects[index].name + ' details'">{{ projects[index].name }} details</a>
     </p>
-    <a [href]="projects[index].url" [title]="projects[index].name + ' link'" target="_blank">View</a>
+    <a [href]="projects[index].url" class="linkExt" [title]="projects[index].name + ' link'" target="_blank" [@openClose]="isOpen ? 'open' : 'closed'">View</a>
+    <div class="overShow overCom" [@openClose]="isOpen ? 'closed' : 'open'">
+      <h1>{{ projects[index].name }}</h1>
+      <p>{{ projects[index].shortDescrip }}</p>
+    </div>
   </div>
 </div>
