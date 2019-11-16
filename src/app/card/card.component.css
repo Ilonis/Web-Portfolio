@@ -1,4 +1,4 @@
-div {
+.overWrap, .overCom {
   min-height: 350px;
 }
 .overCom {  
@@ -17,6 +17,16 @@ div {
 }
 .overShow {
   position: absolute;
+  z-index: 1;
+}
+.overShow div {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  height: 40%;
+  background-color: var(--light-color);
 }
 .linkDetails, .linkExt {
   padding: 10px 25px;

@@ -23,7 +23,7 @@ import { projects } from '../projects';
       state('open', style({
         top: '0px',
         opacity: 1,
-        'z-index': 100,
+        'z-index': 50,
       })),
       transition('closed => open', [
         animate('0.5s ease-in-out')

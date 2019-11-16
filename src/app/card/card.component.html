@@ -5,8 +5,10 @@
     </p>
     <a [href]="projects[index].url" class="linkExt" [title]="projects[index].name + ' link'" target="_blank" [@openClose]="isOpen ? 'open' : 'closed'">View</a>
     <div class="overShow overCom" [@openClose]="isOpen ? 'closed' : 'open'">
-      <h1>{{ projects[index].name }}</h1>
-      <p>{{ projects[index].shortDescrip }}</p>
+      <div>
+        <h1>{{ projects[index].name }}</h1>
+        <p>{{ projects[index].shortDescrip }}</p>
+      </div>
     </div>
   </div>
 </div>
