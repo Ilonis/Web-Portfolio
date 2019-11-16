@@ -44,12 +44,30 @@ export const projectDetails = [
   },
   {
     index: 1,
-    image: 'https://github.com/Ilonis/Web-Portfolio/blob/Initial-Build/src/app/imgs/luna_main.jpg?raw=true',
+    image: 'https://github.com/Ilonis/Web-Portfolio/blob/First-Revision/src/app/imgs/luna_full.jpg?raw=true',
+    width: 1000,
+    height: 1057,
     descripts: [
-      'Test', 
-      'Another',
-      'One More',
-      'Last',
+      {
+        coordx: 50,
+        coordy: 50,
+        words:'Test', 
+      },
+      {
+        coordx: 100,
+        coordy: 450,
+        words:'Test2', 
+      },
+      {
+        coordx: 700,
+        coordy: 250,
+        words:'Test3', 
+      },
+      {
+        coordx: 800,
+        coordy: 800,
+        words:'Test4', 
+      },
     ],
   },
   {

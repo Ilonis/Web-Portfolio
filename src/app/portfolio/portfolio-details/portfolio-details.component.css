@@ -16,8 +16,15 @@
 }
 .detailsNumber.detailsImageNumber {
   position: absolute;
+}
+.detailsImageNumber.detailEvolve {
   width: 7.5%;
   height: 3.3083370092633%;
+  transform: translate(-50%, -113.35%)
+}
+.detailsImageNumber.detailLuna {
+  width: 7.5%;
+  height: 7%;
   transform: translate(-50%, -113.35%)
 }
 .detailsNumber {
