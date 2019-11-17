@@ -26,6 +26,8 @@
   align-items: center;
   width: 50%;
   height: 40%;
+  padding: 25px;
+  text-align: center;
   background-color: var(--light-color);
 }
 .linkDetails, .linkExt {

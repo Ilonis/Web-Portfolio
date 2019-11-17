@@ -17,15 +17,32 @@
 .detailsNumber.detailsImageNumber {
   position: absolute;
 }
-.detailsImageNumber.detailEvolve {
+.detailsImageNumber.detailsEvolve {
   width: 7.5%;
   height: 3.3083370092633%;
-  transform: translate(-50%, -113.35%)
+  transform: translate(-50%, -113.35%);
 }
-.detailsImageNumber.detailLuna {
+.detailsImageNumber.detailsLuna {
   width: 7.5%;
   height: 7%;
-  transform: translate(-50%, -113.35%)
+  transform: translate(-50%, -113.35%);
+}
+.detailsImageNumber.detailsHazel {
+  width: 7%;
+  height: 2.4%;
+  transform: translate(-50%, -113.35%);
+}
+.detailsWrap {
+  display: flex;
+  flex-flow: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.detailsWords {
+  width: 90%;
+  max-width: 1000px;
+  font-size: 1.2em;
+  text-align: justify;
 }
 .detailsNumber {
   display: flex;
