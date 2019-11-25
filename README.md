@@ -4,11 +4,7 @@
 
 Web project created for learning Angular, Github, and Stackblitz for use as a personal portfolio for viewing pervious works.
 
-<<<<<<< HEAD
-Testing VSCode!
-=======
 Testing Online
->>>>>>> 7a2f39750e5c9665e421972a49a0ed0063d65332
 
 <h2>To-Do:</h2>
 <ul>
