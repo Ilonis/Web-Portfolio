@@ -1,3 +1,4 @@
+<!-- Header hides at bottom, Opens on click of button, lists navigation, Routes and animates for every click -->
 <div fxLayout="column" fxLayoutAlign="center center" id="nav" [@openClose]="isOpen ? 'open' : 'closed'">
   <a (click)="toggle()" routerLink="/about" class="navLink">About</a>
   <a (click)="toggle()" routerLink="/portfolio" class="navLink">Portfolio</a>

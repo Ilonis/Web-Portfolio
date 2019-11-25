@@ -1,4 +1,5 @@
 <div class="overWrap">
+  <!-- On mouse enter or leave toggle the sliding panel & apply background from projects.ts -->
   <div (mouseenter)="toggle()" (mouseleave)="toggle()" class="overHide overCom" [style.background-image]="'url(' + projects[index].image + ')'">
     <p [@openClose]="isOpen ? 'open' : 'closed'">
       <a [routerLink]="['/portfolio', projects[index].path]" class="linkDetails" [title]="projects[index].name + ' details'">{{ projects[index].name }} details</a>

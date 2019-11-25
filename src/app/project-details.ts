@@ -1,3 +1,4 @@
+// Details Project Information
 export const projectDetails = [
   {
     index: 0,

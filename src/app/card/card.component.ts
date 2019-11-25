@@ -36,6 +36,7 @@ import { projects } from '../projects';
 })
 export class CardComponent implements OnInit {
   
+  // Recieves data from portfolio component to keep track of which project this is
   @Input() index: 0;
 
   overlayActive: boolean;

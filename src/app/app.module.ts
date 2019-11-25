@@ -17,10 +17,10 @@ import { ContactComponent } from './contact/contact.component';
 import { PortfolioDetailsComponent } from './portfolio/portfolio-details/portfolio-details.component';
 import { ResumeComponent } from './resume/resume.component';
 
+// Router Options to enable Anchor Tags
 const routerOptions: ExtraOptions = {
   useHash: false,
   anchorScrolling: 'enabled',
-  // ...any other options you'd like to use
 };
 
 @NgModule({
@@ -40,6 +40,7 @@ const routerOptions: ExtraOptions = {
     ),
     FlexLayoutModule,
     NgCircleProgressModule.forRoot({
+      //Defaults for About Circles
       radius: 50,
       clockwise: false,
       backgroundColor: "var(--sec-color)",

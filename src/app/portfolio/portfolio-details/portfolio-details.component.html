@@ -2,6 +2,7 @@
 <div fxLayout="column">
   <div id="detailsImageCont">
     <img [src]="projectDetails[index].image">
+    <!-- "For each set of coord in descripts, calculate percentage of image in order to retain some responsive placement" -->
     <a *ngFor="let descript of projectDetails[index].descripts, let i = index" routerLink="./" fragment="details{{i+1}}">
       <h2 class="detailsImageNumber detailsNumber details{{projects[index].name}}" [ngStyle]="{'top.%': descript.coordy/projectDetails[index].height*100, 'left.%': descript.coordx/projectDetails[index].width*100}">{{ i + 1 }}</h2>
     </a>
@@ -9,6 +10,7 @@
   <p class="detailsMain">{{ projects[index].description }}</p>
   <a [href]="projects[index].url" class="detailsLink" target="_blank">View design</a>
   <h1>Details</h1>
+  <!-- "Generate descripts list" -->
   <div *ngFor="let descript of projectDetails[index].descripts, let i = index" class="detailsWrap">
     <h2 id="details{{i+1}}" class="detailsNumber">{{ i + 1 }}</h2>
     <p class="detailsWords">{{ descript.words }}</p>

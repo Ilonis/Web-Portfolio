@@ -1,3 +1,4 @@
+// Skills Information for About Circles
 export const skills = [
   {
     name: "HTML5, CSS3",

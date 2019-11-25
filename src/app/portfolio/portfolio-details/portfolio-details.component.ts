@@ -21,6 +21,7 @@ export class PortfolioDetailsComponent implements OnInit {
   ) { }
 
   ngOnInit() {
+    // In order to match the descriptions with each project, I had to read the path, compare it, and pull the descript array for that project
     this.path = this.route.snapshot.paramMap.get("path");
     for (let i in projects) {
       if (projects[i].path === this.path) {

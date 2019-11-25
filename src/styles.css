@@ -1,4 +1,4 @@
-/* Add application styles & imports to this file! */
+/* CSS variables for color styles */
 :root {
   --main-color: #4405AA;
   --sec-color: #8D47FF;
@@ -9,7 +9,7 @@
   --main-alpha: rgba(68, 5, 170, 0.7);
   --sec-alpha: rgba(141, 71, 255, 0.7);
 }
-
+/* Resets/Defaults */
 body {
   margin: 0px;
   padding: 0px;

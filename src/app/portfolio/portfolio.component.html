@@ -1,5 +1,6 @@
 <h1>Portfolio</h1>
 <div fxLayout="row wrap" fxLayout.lt-sm="column" fxLayoutGap="0px" fxLayoutAlign="flex-start">
+  <!-- "For ever project, create a card component and pass index so that info can be populated" -->
   <ng-container *ngFor="let project of projects">
     <app-card [index]="project.index" fxFlex="50" fxFlex.xs="100%"></app-card>
   </ng-container>

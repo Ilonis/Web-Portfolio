@@ -1,3 +1,4 @@
+// General Project Information
 export const projects = [
   {
     index: 0,
