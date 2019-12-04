@@ -4,7 +4,7 @@
 
 Web project created for learning Angular, Github, and Stackblitz for use as a personal portfolio for viewing pervious works.
 
-New Change Test SSH
+THis version is using raw npm, Angular, and Git
 
 <h2>To-Do:</h2>
 <ul>
