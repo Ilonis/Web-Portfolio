@@ -47,13 +47,13 @@ const routerOptions: ExtraOptions = {
       unitsColor: "var(--light-color)",
       titleFontSize: "20",
       unitsFontSize: "15",
-      outerStrokeWidth: "40",
+      outerStrokeWidth: 40,
       outerStrokeColor: "var(--main-color)",
       outerStrokeLinecap: "butt",
       innerStrokeColor: "var(--dark-color)",
-      innerStrokeWidth: "0",
+      innerStrokeWidth: 0,
       titleFontWeight: "900",
-      animationDuration: "1000",
+      animationDuration: 1000,
       showSubtitle: false
     })
   ],
